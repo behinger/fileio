@@ -65,6 +65,8 @@ else
     val = 'n/a';
   elseif isnan(val)
     val = 'n/a';
+  elseif isstruct(val)
+    val = 'n/a';
   elseif islogical(val)
     if val
       val = 'True';
